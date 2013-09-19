@@ -1,16 +1,16 @@
 public class Multi {
-	// public static int[][] ary = { {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 
-	// 				{11, 12, 13, 14, 15, 16, 17, 18, 19, 20},
-	// 				{21, 22, 23, 24, 25, 26, 27, 28, 29, 30} };
+	public static int[][] ary = { {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 
+					{11, 12, 13, 14, 15, 16, 17, 18, 19, 20},
+					{21, 22, 23, 24, 25, 26, 27, 28, 29, 30} };
 
-	public static int[][] a = { {1, 2, 3, 4, 5, 6} };
+	// public static int[][] a = { {1, 2, 3, 4, 5, 6} };
 
 public static void main(String[] args) {
 	
 		// sumRow(a);
 		// sumCol(a, 1);
-		// snakeDraft(3,10);
-		rectangularize(3, 2);
+		snakeDraft(3,10);
+		// rectangularize(3, 2);
 		// print(a);
 }
 	// public static int print(int[][] a) {
@@ -45,34 +45,34 @@ public static void main(String[] args) {
 	// 	return sum;
 	// }
 
-	// public static void snakeDraft(int players, int rounds) {
+	public static void snakeDraft(int players, int rounds) {
 
-	// 	for (int p=0; p<players; p++) {
+		for (int p=0; p<players; p++) {
 			
-	// 		if (p%2==0) { //even
-	// 			for (int r=0; r<rounds; r++) {
-	// 				System.out.print(ary[p][r] + " ");
-	// 			} 
-	// 			System.out.println();
-	// 		} else {
+			if (p%2==0) { //even
+				for (int r=0; r<rounds; r++) {
+					System.out.print(ary[p][r] + " ");
+				} 
+				System.out.println();
+			} else {
 
-	// 			for (int r=(rounds-1); r>=0; r--) {
-	// 				System.out.print(ary[p][r] + " ");
-	// 			}
-	// 			System.out.println();
-	// 		}
-	// 	}
-	// }
-	public static void rectangularize(int rows, int cols) {
-
-		for (int r = 0; r<3; r++) {
-			for (int c=0; c<2; c++) {
-				System.out.print((a[r][c]) + " ");
-				
+				for (int r=(rounds-1); r>=0; r--) {
+					System.out.print(ary[p][r] + " ");
+				}
+				System.out.println();
 			}
-			System.out.println();
 		}
 	}
+	// public static void rectangularize(int rows, int cols) {
+
+	// 	for (int r = 0; r<3; r++) {
+	// 		for (int c=0; c<2; c++) {
+	// 			System.out.print((a[r][c]) + " ");
+				
+	// 		}
+	// 		System.out.println();
+	// 	}
+	// }
 }
 
 
